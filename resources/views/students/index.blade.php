@@ -8,14 +8,17 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
+
         <h5 class="modal-title" id="exampleModalLabel">Add Student 3</h5>
+
+
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <div class="form-group mb-3">
-                <lable for="">Student Name</lable>
+                <lable for="">Student Names</lable>
                 <input type="text" class=" name form-control">
         </div>
         <div class="form-group mb-3">
