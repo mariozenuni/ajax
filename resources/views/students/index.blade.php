@@ -15,7 +15,7 @@
       </div>
       <div class="modal-body">
         <div class="form-group mb-3">
-                <lable for="">Student Name</lable>
+                <lable for="">Student Names</lable>
                 <input type="text" class=" name form-control">
         </div>
         <div class="form-group mb-3">
