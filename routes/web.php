@@ -19,4 +19,6 @@ Route::get('/', function () {
 
 Route::get('/students', [StudentController::class,'index']);
 
+Route::get('/student-fetch',[StudentController::class,'fetchStudents']);
+
 Route::post('/students', [StudentController::class,'store']);

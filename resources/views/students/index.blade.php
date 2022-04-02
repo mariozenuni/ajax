@@ -105,6 +105,19 @@
 
         <script>
             $(document).ready(function(){
+              fetchStudents();
+
+              function fetchStudents() {
+
+                  $.ajax({
+                    type:"GET",
+                    url:"/student-fetch",
+                    dataType:'json',
+                    success:function(response){
+                        console.log(response.students);
+                    }
+                  });
+              }
 //$(selector).on(event,childSelector,data,function,map)
                 $(document).on('click','.add_student',function(e){
                         e.preventDefault(); // preventing to submit the modal
@@ -121,6 +134,8 @@
                              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                            }
                         });
+
+
 
                       $.ajax({
                         type:'POST',

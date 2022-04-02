@@ -12,6 +12,17 @@ class StudentController extends Controller
      public function index(){
          return view('students.index');
      }
+
+     public function fetchStudents(){
+
+        $students=Student::all();
+
+        return response()->json([
+                'students'=>$students
+        ]);
+                
+        return view('students.index');
+    }
      public function store(Request $request){
          //print_r($request->all());
                $validator=Validator::make($request->all(),
@@ -31,19 +42,16 @@ class StudentController extends Controller
                }else{
                    $student=new Student();
                 
-                $student->name=$request->input('name');
-                $student->email=$request->input('email');
-                $student->phone=$request->input('phone');
-                $student->course=$request->input('course');
-                $student->save();
-                return response()->json([
+                   $student->name=$request->input('name');
+                   $student->email=$request->input('email');
+                   $student->phone=$request->input('phone');
+                   $student->course=$request->input('course');
+                   $student->save();
+                   return response()->json([
                     'status'=>200,
                     'message'=>'Student Added successfully'
                 ]);
                }
-         
-
-         
-       // return view('students.index');
     }
+   
 }
