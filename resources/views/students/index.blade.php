@@ -8,7 +8,10 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
+
         <h5 class="modal-title" id="exampleModalLabel">Add Student 3</h5>
+
+
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -16,22 +19,24 @@
       <div class="modal-body">
       <ul id='errorformlist'></ul>
         <div class="form-group mb-3">
-                <lable for="">Student Name</lable>
-                <input type="text"  name='name' class=" name form-control">
+
+                <lable for="">Student Names</lable>
+                <input type="text" class=" name form-control">
+
         </div>
         <div class="form-group mb-3">
                 <lable for="">Student Email</lable>
-                <input type="text"  name="email" class=" email form-control">
+                <input type="text"  class=" email form-control">
         </div>
 
         <div class="form-group mb-3">
                 <lable for="">Student phone</lable>
-                <input type="text" name="phone" class=" phone form-control">
+                <input type="text"  class=" phone form-control">
         </div>
 
         <div class="form-group mb-3">
                 <lable for="">Student course</lable>
-                <input type="text"  name="course" class="course form-control">
+                <input type="text"  class="course form-control">
         </div>
       </div>
       <div class="modal-footer">
