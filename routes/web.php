@@ -18,5 +18,8 @@ Route::get('/', function () {
 });
 
 Route::get('/students', [StudentController::class,'index']);
-
+Route::get('/student-fetch',[StudentController::class,'fetchStudents']);
+Route::get('/edit-student/{id}',[StudentController::class,'edit']);
+Route::put('/update-student/{id}',[StudentController::class,'update']);
+Route::delete('/delete-student/{id}',[StudentController::class,'destroy']);
 Route::post('/students', [StudentController::class,'store']);
